@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="atendimento.css">
+    <title>Pet Shop</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home">Home</a></li>
+            <li><a href="service">Serviços</a></li>
+            <li><a href="animal">Animais</a></li>
+            <li><a href="atendimento">Atendimentos</a></li>
+        </ul>
+    </nav>
+    <h1>Atendimentos</h1>
+    <form id="create-atendimento-form">
+        <input class="create-atendimento-input" type="text" name="serviceTypes" placeholder="tipo do serviço" />
+        <input class="create-atendimento-input" type="text" name="animal" placeholder="nome do animal" />
+        <input class="create-atendimento-input" type="text" name="scheduledDate" placeholder="Data Agendada" />
+        <button id="create-atendimento-button" type="submit">Salvar Atendimentos</button>
+    </form>
+    <table id="atendimento-list-container">
+        <tr>
+            <th>Tipo do Serviço</th>
+            <th>Nome do Animal</th>
+            <th>Data Agendada</th>
+            
+        </tr>
+    </table>
+    <script src="scriptAtendimento.js"></script>
+</body>
+</html>
